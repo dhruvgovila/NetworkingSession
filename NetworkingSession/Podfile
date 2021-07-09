@@ -7,6 +7,7 @@ target 'NetworkingSession' do
 
   # Pods for NetworkingSession
   pod 'Alamofire'
+  pod 'AlamofireImage'
 
   target 'NetworkingSessionTests' do
     # Pods for testing

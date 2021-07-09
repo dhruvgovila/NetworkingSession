@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		E765FA3A26988144005EF026 /* NetworkingSession.h in Headers */ = {isa = PBXBuildFile; fileRef = E765FA2C26988144005EF026 /* NetworkingSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E765FA492698848E005EF026 /* NetworkRequestParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765FA472698848E005EF026 /* NetworkRequestParams.swift */; };
 		E765FA4A2698848E005EF026 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765FA482698848E005EF026 /* Networking.swift */; };
+		E765FAA92698B2AC005EF026 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765FAA82698B2AC005EF026 /* Image.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		E765FA3926988144005EF026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E765FA472698848E005EF026 /* NetworkRequestParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequestParams.swift; sourceTree = "<group>"; };
 		E765FA482698848E005EF026 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		E765FAA82698B2AC005EF026 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +83,6 @@
 				BD5EAF0F3E005408F3004CF5 /* Pods-NetworkingSession-NetworkingSessionTests.debug.xcconfig */,
 				16489887600BFB13FB1D8078 /* Pods-NetworkingSession-NetworkingSessionTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -127,18 +128,27 @@
 		E765FA4526988456005EF026 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				E765FA462698845A005EF026 /* Networking */,
+				E765FA9D2698B028005EF026 /* Image */,
+				E765FA462698845A005EF026 /* HTTPRequests */,
 			);
 			path = Source;
 			sourceTree = "<group>";
 		};
-		E765FA462698845A005EF026 /* Networking */ = {
+		E765FA462698845A005EF026 /* HTTPRequests */ = {
 			isa = PBXGroup;
 			children = (
 				E765FA482698848E005EF026 /* Networking.swift */,
 				E765FA472698848E005EF026 /* NetworkRequestParams.swift */,
 			);
-			path = Networking;
+			path = HTTPRequests;
+			sourceTree = "<group>";
+		};
+		E765FA9D2698B028005EF026 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				E765FAA82698B2AC005EF026 /* Image.swift */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E765FA492698848E005EF026 /* NetworkRequestParams.swift in Sources */,
+				E765FAA92698B2AC005EF026 /* Image.swift in Sources */,
 				E765FA4A2698848E005EF026 /* Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

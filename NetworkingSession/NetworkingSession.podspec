@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "NetworkingSession"
-  spec.version      = "0.1.1"
+  spec.version      = "0.1.2"
   spec.summary      = "A Networking Session Library"
 
   spec.description  = "A end-to-end solution for networking in iOS"
@@ -13,4 +13,5 @@ Pod::Spec.new do |spec|
   spec.swift_version = '5.0'
   spec.source       = { :git => "#{spec.homepage}.git", :tag => "#{spec.version}" }
   spec.source_files  = "NetworkingSession/NetworkingSession/Source/**/*"
+  spec.dependency "Alamofire", '5.4.3'
 end

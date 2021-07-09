@@ -6,6 +6,7 @@ target 'NetworkingSession' do
   use_frameworks!
 
   # Pods for NetworkingSession
+  pod 'Alamofire'
 
   target 'NetworkingSessionTests' do
     # Pods for testing

@@ -7,10 +7,11 @@
 //
 
 import Foundation
-import UIKit
+import Alamofire
 
 public class Networking {
-    func makeNetworkingRequest() {
+    public init() {}
+    public func makeNetworkingRequest() {
         print("Thanks! Making a networking request")
     }
 }

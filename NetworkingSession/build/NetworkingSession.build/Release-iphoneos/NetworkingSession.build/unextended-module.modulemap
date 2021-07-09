@@ -1,0 +1,10 @@
+framework module NetworkingSession {
+  umbrella header "NetworkingSession.h"
+
+  export *
+  module * { export * }
+}
+
+module NetworkingSession.__Swift {
+    exclude header "NetworkingSession-Swift.h"
+}

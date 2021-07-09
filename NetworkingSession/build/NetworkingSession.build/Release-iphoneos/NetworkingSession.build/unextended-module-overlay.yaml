@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/dgovila/Documents/Practice/NetworkingSession/NetworkingSession/build/Release-iphoneos/NetworkingSession.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/dgovila/Documents/Practice/NetworkingSession/NetworkingSession/build/NetworkingSession.build/Release-iphoneos/NetworkingSession.build/unextended-module.modulemap",
+    }]
+  }]
+}

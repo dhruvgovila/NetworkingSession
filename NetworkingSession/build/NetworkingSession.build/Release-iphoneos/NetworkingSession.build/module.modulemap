@@ -1,0 +1,11 @@
+framework module NetworkingSession {
+  umbrella header "NetworkingSession.h"
+
+  export *
+  module * { export * }
+}
+
+module NetworkingSession.Swift {
+    header "NetworkingSession-Swift.h"
+    requires objc
+}

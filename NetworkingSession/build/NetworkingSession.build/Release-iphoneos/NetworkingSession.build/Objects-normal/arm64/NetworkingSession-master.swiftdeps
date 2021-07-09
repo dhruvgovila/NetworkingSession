@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)"
+options: "08b38bd079e1c124d374664e9289d3b4"
+build_time: [1625839009, 563039000]
+inputs:
+  "/Users/dgovila/Documents/Practice/NetworkingSession/NetworkingSession/NetworkingSession/Source/Networking/NetworkRequestParams.swift": [9223372036, 854775807]
+  "/Users/dgovila/Documents/Practice/NetworkingSession/NetworkingSession/NetworkingSession/Source/Networking/Networking.swift": [9223372036, 854775807]

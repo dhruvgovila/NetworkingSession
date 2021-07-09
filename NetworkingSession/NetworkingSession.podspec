@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "NetworkingSession"
-  spec.version      = "0.1.2"
+  spec.version      = "0.1.3"
   spec.summary      = "A Networking Session Library"
 
   spec.description  = "A end-to-end solution for networking in iOS"

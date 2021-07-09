@@ -10,6 +10,8 @@
 		E765FA3326988144005EF026 /* NetworkingSession.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E765FA2926988144005EF026 /* NetworkingSession.framework */; };
 		E765FA3826988144005EF026 /* NetworkingSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765FA3726988144005EF026 /* NetworkingSessionTests.swift */; };
 		E765FA3A26988144005EF026 /* NetworkingSession.h in Headers */ = {isa = PBXBuildFile; fileRef = E765FA2C26988144005EF026 /* NetworkingSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E765FA492698848E005EF026 /* NetworkRequestParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765FA472698848E005EF026 /* NetworkRequestParams.swift */; };
+		E765FA4A2698848E005EF026 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765FA482698848E005EF026 /* Networking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		E765FA3226988144005EF026 /* NetworkingSessionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingSessionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E765FA3726988144005EF026 /* NetworkingSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingSessionTests.swift; sourceTree = "<group>"; };
 		E765FA3926988144005EF026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E765FA472698848E005EF026 /* NetworkRequestParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequestParams.swift; sourceTree = "<group>"; };
+		E765FA482698848E005EF026 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 		E765FA2B26988144005EF026 /* NetworkingSession */ = {
 			isa = PBXGroup;
 			children = (
+				E765FA4526988456005EF026 /* Source */,
 				E765FA2C26988144005EF026 /* NetworkingSession.h */,
 				E765FA2D26988144005EF026 /* Info.plist */,
 			);
@@ -84,6 +89,23 @@
 				E765FA3926988144005EF026 /* Info.plist */,
 			);
 			path = NetworkingSessionTests;
+			sourceTree = "<group>";
+		};
+		E765FA4526988456005EF026 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E765FA462698845A005EF026 /* Networking */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		E765FA462698845A005EF026 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E765FA482698848E005EF026 /* Networking.swift */,
+				E765FA472698848E005EF026 /* NetworkRequestParams.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +169,7 @@
 				TargetAttributes = {
 					E765FA2826988144005EF026 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 					E765FA3126988144005EF026 = {
 						CreatedOnToolsVersion = 12.3;
@@ -194,6 +217,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E765FA492698848E005EF026 /* NetworkRequestParams.swift in Sources */,
+				E765FA4A2698848E005EF026 /* Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +293,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -326,7 +351,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -341,6 +366,7 @@
 		E765FA3E26988144005EF026 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SG4PDAK856;
@@ -357,6 +383,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.iOS.NetworkingSession;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +392,7 @@
 		E765FA3F26988144005EF026 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SG4PDAK856;
@@ -389,6 +417,7 @@
 		E765FA4126988144005EF026 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SG4PDAK856;
 				INFOPLIST_FILE = NetworkingSessionTests/Info.plist;
@@ -407,6 +436,7 @@
 		E765FA4226988144005EF026 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SG4PDAK856;
 				INFOPLIST_FILE = NetworkingSessionTests/Info.plist;
